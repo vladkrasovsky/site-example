@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 1.4;
+}
+.row {
+	background: yellow;
+	padding: 0 30px;
+	overflow: hidden;
+	/*font-weight: bold;*/
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: right;
+	/*text-align: center;*/
+}
+.menu > li {
+	/*display: inline-block;*/
+	float: left;
+}
+.menu a {
+	padding: 25px 10px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	border-top: 3px solid transparent;
+	transition: all .3s linear;
+}
+.menu > li > a:hover {
+	border-top: 3px solid #000;
+}
+.menu > li > ul {
+	position: absolute;
+	list-style: none;
+	padding: 5px 0;
+	margin: 0; 
+	display: none;
+	background-color: yellow;
+	z-index: 1;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 3px 5px rgba(0,0,0, .3);
+}
+.menu > li:hover ul {
+	display: block;
+}
+.menu > li > ul a {
+	padding: 5px 10px;
+}
+.logo {
+	float: left;
+	padding: 25px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+.block {
+	padding: 150px 0;
+	/*background-color: #eee;*/
+	text-align: center;
+	color: #000;
+	font-size: 60px;
+	position: relative;
+	animation-name: block;
+    animation-duration: .3s;
+}
+@keyframes block {
+    from {left: -100%;}
+    to {left: 0;}
+}
